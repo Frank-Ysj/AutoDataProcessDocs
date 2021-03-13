@@ -1,0 +1,281 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>欢迎来到 数据自动处理工具 文档! &mdash; AutoDataProcessDocs 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="调度平台启动" href="scheduler-start/index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> AutoDataProcessDocs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">调度平台</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="scheduler-start/index.html">启动项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler-tasksetting/index.html">任务搭建及插件开发</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler-Instructions/index.html">搭建一个任务示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler-deploy/index.html">安装部署</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API平台</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api-start/index.html">启动项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-setting/index.html">接口搭建</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-Instructions/index.html">使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-deploy/index.html">安装部署</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ETL工具</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="etl-start/index.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="etl-start/index.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="etl-start/index.html">使用说明</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">AutoDataProcessDocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>欢迎来到 数据自动处理工具 文档!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>欢迎来到 数据自动处理工具 文档!<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>数据自动处理工具大致分为 <strong>调度平台</strong> 和 <strong>API平台</strong></p>
+<div class="section" id="id2">
+<h2>作用及应用场景：<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><strong>调度平台</strong> ：主动处理业务逻辑。根据设置的调度任务作业来主动执行插件逻辑，不需要人为手动去操作，用于自定义作业</p></li>
+<li><p><strong>API平台</strong> ：被动处理业务逻辑。调用方调用API平台中的api，被动执行插件逻辑，需要有外力来调用，用于api的开发</p></li>
+</ul>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">调度平台</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="scheduler-start/index.html">启动项目</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-start/index.html#windows">Windows环境下启动</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-start/index.html#linux">Linux环境下启动</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-start/index.html#id2">网站登录</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler-tasksetting/index.html">任务搭建及插件开发</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-tasksetting/datasourcesetting.html">数据源设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-tasksetting/dbsetting.html">数据中心设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-tasksetting/tasksetting.html">任务计划设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-tasksetting/jsonsetting.html">数据源JSON格式设置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-tasksetting/systemprofile.html">系统参数</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-tasksetting/systemvariables.html">系统变量</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-tasksetting/tasklog.html">任务日志</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler-Instructions/index.html">搭建一个任务示例</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-Instructions/index.html#id2">创建调度计划</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="scheduler-deploy/index.html">安装部署</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-deploy/index.html#windows">Windows下部署</a></li>
+<li class="toctree-l2"><a class="reference internal" href="scheduler-deploy/index.html#linux">Linux下部署</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">API平台</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api-start/index.html">启动项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-setting/index.html">接口搭建</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-Instructions/index.html">使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api-deploy/index.html">安装部署</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api-deploy/deploy.html">部署111</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="toctree-wrapper compound">
+<p class="caption"><span class="caption-text">ETL工具</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="etl-start/index.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="etl-start/index.html">安装</a></li>
+<li class="toctree-l1"><a class="reference internal" href="etl-start/index.html">使用说明</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="scheduler-start/index.html" class="btn btn-neutral float-right" title="调度平台启动" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, ysj.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
