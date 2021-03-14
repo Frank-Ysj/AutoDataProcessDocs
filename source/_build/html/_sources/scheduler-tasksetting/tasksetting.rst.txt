@@ -2,7 +2,7 @@
 任务计划设置
 ========================================
 
-当 :doc:`维护好数据源后 <../scheduler-tasksetting/datasourcesetting>` 和 :doc:`维护好数据中心 <../scheduler-tasksetting/dbsetting>` 后，需要新增调度任务
+当 :doc:`维护好数据源 <../scheduler-tasksetting/datasourcesetting>` 和 :doc:`维护好数据中心 <../scheduler-tasksetting/dbsetting>` 后，需要新增调度任务
 
 新增任务
 ===========================
