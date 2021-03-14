@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>系统参数 &mdash; AutoDataProcessDocs 1.0.0 文档</title>
+  <title>系统参数 &mdash; AutoDataProcessDocs 1.0.0 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="系统变量" href="systemvariables.html" />
     <link rel="prev" title="数据源JSON格式设置" href="jsonsetting.html" /> 
 </head>
@@ -182,13 +182,13 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>系统参数<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>系统参数<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <img alt="../_images/systemprofile.png" src="../_images/systemprofile.png" />
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">IsDebugLog</span></code>：是否开启日志</p></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p>前提是使用应用自带的日志组件</p>
 <p>private static readonly AdminWeb.Core.TaskJob.LogHelper _logHelper = new LogHelper();</p>
 <p>或者，通过传入的参数判断</p>
@@ -198,7 +198,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">IsPlugExecSql</span></code>：设置为1， <a class="reference internal" href="datasourcesetting.html"><span class="doc">数据源设置中的成功和失败语句</span></a> 不会执行，如果需要在插件执行，可以在插件获取到数据源设置中成功和失败定义好的语句</p></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p>var successSql = jobpara.SuccessSqlString;//数据源设置的成功后执行语句</p>
 <p>var failSql = jobpara.FailSqlString;//数据源设置的失败后执行语句</p>
 </div>
@@ -218,7 +218,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; 版权所有 2021, ysj.
+        &#169; Copyright 2021, ysj.
 
     </p>
   </div>

@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>数据源JSON格式设置 &mdash; AutoDataProcessDocs 1.0.0 文档</title>
+  <title>数据源JSON格式设置 &mdash; AutoDataProcessDocs 1.0.0 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="系统参数" href="systemprofile.html" />
     <link rel="prev" title="任务计划设置" href="tasksetting.html" /> 
 </head>
@@ -188,18 +188,18 @@
            <div itemprop="articleBody">
             
   <div class="section" id="json">
-<h1>数据源JSON格式设置<a class="headerlink" href="#json" title="永久链接至标题">¶</a></h1>
+<h1>数据源JSON格式设置<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h1>
 <p>本模块主要功能是提供可配置 <strong>数据源设置</strong> 中主数据源和明细数据源的 <code class="docutils literal notranslate"><span class="pre">数据转化JSON</span></code> 的转化扩展功能，如若想要在插件内自己转化，此转化设置不配置即可。</p>
 <p>给根据需求配置完后，可在插件内通过 <code class="docutils literal notranslate"><span class="pre">AdminWeb.Core.Common.BaseConvert.DataColumnRelationToJson.GetArrayJson(..)</span></code> 静态方法转化已配置好的 <code class="docutils literal notranslate"><span class="pre">JSON</span></code></p>
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p>由于空数据源只用来调度插件，没有配置任何 SQL 语句，所以，只有 <a class="reference internal" href="datasourcesetting.html"><span class="doc">数据源设置</span></a> 使用单表数据源和多表数据源模式，此模块才可以使用，否则配置无效。</p>
 </div>
 <div class="section" id="id1">
-<h2>JSON格式配置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<h2>JSON格式配置<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/jsonsetting.png" src="../_images/jsonsetting.png" />
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p><strong>选择数据中心</strong>：根据哪个数据中心来生成列字段</p>
 <p><strong>是否生成ownerId</strong> ：该信息项为 <strong>ETL</strong> 提供，自定义的插件不需要选择此选项。</p>
 </div>
@@ -213,7 +213,7 @@
 </ul>
 </div>
 <div class="section" id="id2">
-<h2>单表数据源设置<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2>单表数据源设置<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/dsmainsql.png" src="../_images/dsmainsql.png" />
 <img alt="../_images/jsonstruct.png" src="../_images/jsonstruct.png" />
 <p>生成的单表数据源的JSON结构如下所示：</p>
@@ -235,7 +235,7 @@
 <p><code class="docutils literal notranslate"><span class="pre">time</span></code> ：是否带有时间戳可通过控制 <code class="docutils literal notranslate"><span class="pre">AdminWeb.Core.Common.BaseConvert.DataColumnRelationToJson.GetArrayJson(..)</span></code> 的参数的 <code class="docutils literal notranslate"><span class="pre">isTimestamp</span></code> 参数来控制</p>
 </div>
 <div class="section" id="id3">
-<h2>多表数据源设置<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<h2>多表数据源设置<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/dsdetailsql.png" src="../_images/dsdetailsql.png" />
 <img alt="../_images/jsonmultistruct.png" src="../_images/jsonmultistruct.png" />
 <p>生成的多表数据源的JSON结构如下所示：</p>
@@ -276,7 +276,7 @@
 </div>
 </div>
 <div class="section" id="id4">
-<h2>插件内转化JSON<a class="headerlink" href="#id4" title="永久链接至标题">¶</a></h2>
+<h2>插件内转化JSON<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
 
 <span class="k">namespace</span> <span class="nn">JobDemo</span>
@@ -354,7 +354,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; 版权所有 2021, ysj.
+        &#169; Copyright 2021, ysj.
 
     </p>
   </div>

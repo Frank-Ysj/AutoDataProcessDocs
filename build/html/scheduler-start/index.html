@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>调度平台启动 &mdash; AutoDataProcessDocs 1.0.0 文档</title>
+  <title>调度平台启动 &mdash; AutoDataProcessDocs 1.0.0 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="调度任务设置" href="../scheduler-tasksetting/index.html" />
     <link rel="prev" title="欢迎来到 数据自动处理工具 文档!" href="../index.html" /> 
 </head>
@@ -176,9 +176,9 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>调度平台启动<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>调度平台启动<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="windows">
-<h2>Windows环境下启动<a class="headerlink" href="#windows" title="永久链接至标题">¶</a></h2>
+<h2>Windows环境下启动<a class="headerlink" href="#windows" title="Permalink to this headline">¶</a></h2>
 <p>Windows Server 2008 R2 sp1以上+</p>
 <p><strong>第一步 安装配置环境</strong></p>
 <p>首先，需要先安装netcore的环境， 下载并安装 <a class="reference external" href="https://dotnet.microsoft.com/download/dotnet/thank-you/sdk-3.1.406-windows-x64-installer">netcore3.1的SDK</a> .</p>
@@ -196,7 +196,7 @@
 <p>如上图， <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> 启动的端口号为7050，访问地址为 <code class="docutils literal notranslate"><span class="pre">http://localhost:7050</span></code></p>
 </div>
 <div class="section" id="linux">
-<h2>Linux环境下启动<a class="headerlink" href="#linux" title="永久链接至标题">¶</a></h2>
+<h2>Linux环境下启动<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h2>
 <p>（1）通过 <code class="docutils literal notranslate"><span class="pre">dotnet</span></code> 命令直接启动</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>-- 添加微软仓库（以CentOS 7为例，具体看官方文档查看官方文档：https://docs.microsoft.com/zh-cn/dotnet/core/install/linux-package-manager-centos7）
 sudo rpm -Uvh https://packages.microsoft.com/config/centos/7/packages-microsoft-prod.rpm
@@ -214,7 +214,7 @@ docker run -d -it --restart always -p <span class="m">8051</span>:80 --name apps
 <p><strong>注意：</strong> 正式环境使用 <code class="docutils literal notranslate"><span class="pre">docker</span></code> 启动时，需要将 <code class="docutils literal notranslate"><span class="pre">schedulerdata.dat</span></code> 通过数据卷开放出来</p>
 </div>
 <div class="section" id="id2">
-<h2>网站登录<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2>网站登录<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p><strong>打开浏览器</strong></p>
 <p>尽量通过使用 <strong>谷歌内核的浏览器</strong> 打开 <code class="docutils literal notranslate"><span class="pre">http://localhost:port</span></code> （端口号为启动使用的端口号）</p>
 <p><strong>登录</strong></p>
@@ -241,7 +241,7 @@ docker run -d -it --restart always -p <span class="m">8051</span>:80 --name apps
 
   <div role="contentinfo">
     <p>
-        &#169; 版权所有 2021, ysj.
+        &#169; Copyright 2021, ysj.
 
     </p>
   </div>

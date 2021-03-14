@@ -8,7 +8,6 @@
 点击 `新增` 按钮，增加数据源
 
 .. image:: ./datasourceimg/addds.png
-
 .. image:: ./datasourceimg/adddsinfo.png
 
 - ``数据源编号``：保持唯一即可

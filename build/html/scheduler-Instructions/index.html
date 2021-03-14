@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>搭建一个任务 &mdash; AutoDataProcessDocs 1.0.0 文档</title>
+  <title>搭建一个任务 &mdash; AutoDataProcessDocs 1.0.0 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="部署" href="../scheduler-deploy/index.html" />
     <link rel="prev" title="任务日志" href="../scheduler-tasksetting/tasklog.html" /> 
 </head>
@@ -174,7 +174,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>搭建一个任务<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
+<h1>搭建一个任务<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <p><strong>了解完上面的内容后，让我们搭建一个任务吧</strong></p>
 <p>搭建人物的基本流程如下:</p>
 <ul class="simple">
@@ -188,14 +188,14 @@
 <p>本示例通过一个简单的单表应用来介绍上述步骤. 一旦你学会了这些基础，你可以查看 <a class="reference internal" href="../scheduler-tasksetting/tasksetting.html"><span class="doc">任务计划设置</span></a> 来了解更多用法.</p>
 <p>该应用主要通过插件打印 <code class="docutils literal notranslate"><span class="pre">users</span></code> 表重的数据</p>
 <div class="section" id="id2">
-<h2>创建调度计划<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2>创建调度计划<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>1、 <strong>数据源设置</strong> ，详情请查看 <a class="reference internal" href="../scheduler-tasksetting/datasourcesetting.html"><span class="doc">数据源设置</span></a> 来了解更多用法</p>
 <img alt="../_images/dssetting-demo.png" src="../_images/dssetting-demo.png" />
 <img alt="../_images/dssetting-demo1.png" src="../_images/dssetting-demo1.png" />
 <img alt="../_images/tableresult-demo.png" src="../_images/tableresult-demo.png" />
 <img alt="../_images/tableresult-demo1.png" src="../_images/tableresult-demo1.png" />
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p>注意如果想要调用插件后，自动执行 <strong>成功后执行的sql</strong> 和 <strong>失败后执行的sql</strong> 的SQL语句，需要去  <a class="reference internal" href="../scheduler-tasksetting/systemprofile.html"><span class="doc">系统参数</span></a> 将 <code class="docutils literal notranslate"><span class="pre">IsPlugExecSql</span></code> 设置成 <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
 </div>
 <p>2、创建 <code class="docutils literal notranslate"><span class="pre">.Net</span> <span class="pre">Core</span> <span class="pre">3.1</span></code> 类库，添加如下引用：</p>
@@ -283,7 +283,7 @@
 <img alt="../_images/tasksetting-demo.png" src="../_images/tasksetting-demo.png" />
 <img alt="../_images/tasksetting-demo1.png" src="../_images/tasksetting-demo1.png" />
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p>尤其需要注意 <strong>数据中心的选择</strong> 、 <strong>选择数据源</strong> 以及 <strong>插件的配置</strong></p>
 </div>
 <p>8、 <strong>启动任务</strong></p>
@@ -292,13 +292,13 @@
 <p>9、查看 <strong>日志</strong> ，查看任务的运行状态</p>
 <img alt="../_images/tasklog-demo.png" src="../_images/tasklog-demo.png" />
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p>前提是需要开启打印日志的参数，详情请看 <a class="reference internal" href="../scheduler-tasksetting/systemprofile.html"><span class="doc">系统参数中的IsDebugLog参数</span></a> 来了解开启日志的方法</p>
 </div>
 <p>10、查看执行后的数据</p>
 <img alt="../_images/tableresult-demo2.png" src="../_images/tableresult-demo2.png" />
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p>如果日志显示已成功或者失败，但是 <strong>成功后执行的sql</strong> 和 <strong>失败后执行的sql</strong> 的SQL语句没有执行，需要去  <a class="reference internal" href="../scheduler-tasksetting/systemprofile.html"><span class="doc">系统参数</span></a> 将 <code class="docutils literal notranslate"><span class="pre">IsPlugExecSql</span></code> 是否设置成了 <code class="docutils literal notranslate"><span class="pre">1</span></code>，设置成 <code class="docutils literal notranslate"><span class="pre">0</span></code> 才可以</p>
 </div>
 </div>
@@ -318,7 +318,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; 版权所有 2021, ysj.
+        &#169; Copyright 2021, ysj.
 
     </p>
   </div>

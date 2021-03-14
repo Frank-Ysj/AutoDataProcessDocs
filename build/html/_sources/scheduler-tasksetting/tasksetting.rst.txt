@@ -2,13 +2,12 @@
 任务计划设置
 ========================================
 
-在 :doc:`维护好数据源后 <../scheduler-tasksetting/datasourcesetting>` 和 :doc:`维护好数据中心 <../scheduler-tasksetting/dbsetting>` 后，需要新增调度任务
+当 :doc:`维护好数据源 <../scheduler-tasksetting/datasourcesetting>` 和 :doc:`维护好数据中心 <../scheduler-tasksetting/dbsetting>` 后，需要新增调度任务
 
 新增任务
 ===========================
 
 .. image:: ./taskimg/addtask.png
-
 .. image:: ./taskimg/addtaskinfo.png
 
 - ``任务编号``：必填，保持唯一即可

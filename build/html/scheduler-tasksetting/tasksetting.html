@@ -1,13 +1,13 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="zh" >
+<html class="writer-html5" lang="en" >
 <head>
   <meta charset="utf-8" />
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>任务计划设置 &mdash; AutoDataProcessDocs 1.0.0 文档</title>
+  <title>任务计划设置 &mdash; AutoDataProcessDocs 1.0.0 documentation</title>
   
 
   
@@ -36,8 +36,8 @@
     <script type="text/javascript" src="../_static/js/theme.js"></script>
 
     
-    <link rel="index" title="索引" href="../genindex.html" />
-    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="数据源JSON格式设置" href="jsonsetting.html" />
     <link rel="prev" title="数据中心设置" href="dbsetting.html" /> 
 </head>
@@ -192,10 +192,10 @@
            <div itemprop="articleBody">
             
   <div class="section" id="id1">
-<h1>任务计划设置<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h1>
-<p>在 <a class="reference internal" href="datasourcesetting.html"><span class="doc">维护好数据源后</span></a> 和 <a class="reference internal" href="dbsetting.html"><span class="doc">维护好数据中心</span></a> 后，需要新增调度任务</p>
+<h1>任务计划设置<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>当 <a class="reference internal" href="datasourcesetting.html"><span class="doc">维护好数据源</span></a> 和 <a class="reference internal" href="dbsetting.html"><span class="doc">维护好数据中心</span></a> 后，需要新增调度任务</p>
 <div class="section" id="id2">
-<h2>新增任务<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h2>
+<h2>新增任务<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/addtask.png" src="../_images/addtask.png" />
 <img alt="../_images/addtaskinfo.png" src="../_images/addtaskinfo.png" />
 <ul class="simple">
@@ -214,14 +214,14 @@
 </ul>
 </div>
 <div class="section" id="id3">
-<h2>修改任务<a class="headerlink" href="#id3" title="永久链接至标题">¶</a></h2>
+<h2>修改任务<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/edittaskinfo.png" src="../_images/edittaskinfo.png" />
 <img alt="../_images/edittaskjson.png" src="../_images/edittaskjson.png" />
 <p>修改任务时，可以对 <code class="docutils literal notranslate"><span class="pre">配置文件</span></code> 进行编辑，注意在json编辑器种编辑如果前面出现红色的 × ，需要去 <a class="reference external" href="http://www.bejson.com/">验证</a> json的有效性，确保json文件内的格式没有问题</p>
 <p>修改完 <code class="docutils literal notranslate"><span class="pre">配置文件</span></code> 后，如果该任务处在已启动状态，需要重新启动任务后，新的配置文件才能生效</p>
 </div>
 <div class="section" id="id5">
-<h2>插件内使用配置文件<a class="headerlink" href="#id5" title="永久链接至标题">¶</a></h2>
+<h2>插件内使用配置文件<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p>配置文件格式默认为 <code class="docutils literal notranslate"><span class="pre">json格式的文件</span></code> ，只要满足json文件的格式，就可以在插件中获取到任务对应配置文件的信息</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">using</span> <span class="nn">System</span><span class="p">;</span>
 
@@ -259,7 +259,7 @@
 <p>如上述代码所示， <code class="docutils literal notranslate"><span class="pre">jobpara.ConfigurationInfo[&quot;WMSApiAddress:888&quot;]</span></code> ，能够取到配置文件内对应的值 <a class="reference external" href="http://localhost:7005">http://localhost:7005</a>，取数据的方式可以参考 <a class="reference external" href="https://docs.microsoft.com/zh-cn/aspnet/core/fundamentals/configuration/?view=aspnetcore-3.1">netcore3.1获取配置</a> .</p>
 </div>
 <div class="section" id="id6">
-<h2>插件开发<a class="headerlink" href="#id6" title="永久链接至标题">¶</a></h2>
+<h2>插件开发<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p>创建 <code class="docutils literal notranslate"><span class="pre">.Net</span> <span class="pre">Core</span> <span class="pre">3.1</span></code> 类库，添加如下引用：</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">AdminWeb.Core.Common</span></code> ：提供了公共方法（比如：加密、http请求、文件处理等）</p></li>
@@ -271,7 +271,7 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">Newtonsoft.Json</span></code> ：.Net中开源的Json序列化和反序列化工具</p></li>
 </ul>
 <div class="admonition note">
-<p class="admonition-title">注解</p>
+<p class="admonition-title">Note</p>
 <p>后期会创建插件的 <strong>NuGet</strong> 模板，通过命令一次性生成 <code class="docutils literal notranslate"><span class="pre">.Net</span> <span class="pre">Core</span> <span class="pre">3.1</span></code> 类库项目</p>
 </div>
 <p>插件开发分为 <code class="docutils literal notranslate"><span class="pre">单表插件开发</span></code> 和 <code class="docutils literal notranslate"><span class="pre">多表插件插件</span></code> 开发，两种插件的IJOB类实现的接口不同，<strong>单表</strong> 和 <strong>空数据源</strong> 插件需要实现 <code class="docutils literal notranslate"><span class="pre">IMyJob</span></code> 接口，<strong>多表</strong> 需要实现 <code class="docutils literal notranslate"><span class="pre">IMyMultiJob</span></code> 接口，如下图：</p>
@@ -365,7 +365,7 @@
 </div>
 </div>
 <div class="section" id="id7">
-<h2>插件扩展<a class="headerlink" href="#id7" title="永久链接至标题">¶</a></h2>
+<h2>插件扩展<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p>插件扩展接口 <code class="docutils literal notranslate"><span class="pre">IJobExtension</span></code> 接口，该接口的作用是点击 <strong>任务计划设置</strong> 的 <code class="docutils literal notranslate"><span class="pre">启动</span></code> 和 <code class="docutils literal notranslate"><span class="pre">停止</span></code> 按钮时触发</p>
 <div class="highlight-csharp notranslate"><div class="highlight"><pre><span></span><span class="k">namespace</span> <span class="nn">JobDemo</span>
 <span class="p">{</span>
@@ -414,7 +414,7 @@
 </div>
 </div>
 <div class="section" id="id8">
-<h2>插件配置<a class="headerlink" href="#id8" title="永久链接至标题">¶</a></h2>
+<h2>插件配置<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>将编译出来的插件DLL，放置程序的 <code class="docutils literal notranslate"><span class="pre">Handlers</span></code> 文件夹下</p></li>
 </ul>
@@ -429,7 +429,7 @@
 <img alt="../_images/taskplanlist.png" src="../_images/taskplanlist.png" />
 </div>
 <div class="section" id="id9">
-<h2>插件更新<a class="headerlink" href="#id9" title="永久链接至标题">¶</a></h2>
+<h2>插件更新<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p>由于 <code class="docutils literal notranslate"><span class="pre">netcore3.1</span></code> 的 <strong>热加载</strong> 能力，插件在任务启动时，就已经加载完毕，不需要每次调度都调用该插件，所以不需要重启服务，直接覆盖重启对应任务即可，插件更新的步骤如下：</p>
 <ul class="simple">
 <li><p>将修改后编译的DLL，覆盖到 <code class="docutils literal notranslate"><span class="pre">Handlers</span></code> 文件夹下</p></li>
@@ -437,7 +437,7 @@
 </ul>
 </div>
 <div class="section" id="id10">
-<h2>插件调试<a class="headerlink" href="#id10" title="永久链接至标题">¶</a></h2>
+<h2>插件调试<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p>双击 <strong>AdminWeb.Core.exe</strong> ，本地启动程序，确保插件在 <code class="docutils literal notranslate"><span class="pre">Debug</span></code> 可调试状态下，并且 <code class="docutils literal notranslate"><span class="pre">Handlers</span></code> 文件夹下的插件补丁是 <strong>当前代码最新编译出来的DLL文件</strong> ，添加到进程，再启动任务等待执行即可</p>
 <ul class="simple">
 <li><p>编译文件，覆盖到 <code class="docutils literal notranslate"><span class="pre">Handlers</span></code> 文件夹下</p></li>
@@ -463,7 +463,7 @@
 
   <div role="contentinfo">
     <p>
-        &#169; 版权所有 2021, ysj.
+        &#169; Copyright 2021, ysj.
 
     </p>
   </div>
