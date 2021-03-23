@@ -172,7 +172,27 @@
   <div class="section" id="etl">
 <h1>ETL安装<a class="headerlink" href="#etl" title="Permalink to this headline">¶</a></h1>
 <p>ETL，是英文 <strong>Extract-Transform-Load</strong> 的缩写，用来描述将数据从来源端经过 <strong>抽取（extract）、转换（transform）、加载（load）</strong> 至目的端的过程。</p>
-<p>ETL能够通过 <em>客户端</em> 调度作业将数据从 <strong>源数据库</strong> 抽取出来，通过将数据转换为 <code class="docutils literal notranslate"><span class="pre">JSON</span></code> ，而后基于http协议传递数据给 <em>服务端</em> ，服务端再将数据写入 <strong>目标数据库</strong></p>
+<p>ETL能够通过 <em>客户端</em> 调度作业将数据从 <strong>源数据库</strong> 抽取出来，通过将数据通过插件 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler.dll</span></code> 内部转换为 <code class="docutils literal notranslate"><span class="pre">JSON</span></code> ，而后基于http协议传递数据给 <em>服务端</em> API平台，服务端再将数据写入 <strong>目标数据库</strong>，主要流程如下：</p>
+<ul class="simple">
+<li><p>设置 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler</span></code> <strong>调度服务</strong> 的 <a class="reference internal" href="../scheduler-tasksetting/dbsetting.html"><span class="doc">数据中心</span></a></p></li>
+<li><p>设置 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler</span></code> <strong>调度平台</strong> 的 <a class="reference internal" href="../scheduler-tasksetting/datasourcesetting.html"><span class="doc">数据源</span></a> ，维护对应的SQL</p></li>
+<li><p>设置 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler</span></code> <strong>调度平台</strong> 的 <a class="reference internal" href="../scheduler-tasksetting/jsonsetting.html"><span class="doc">数据源的JSON格式</span></a> ，控制传输格式</p></li>
+<li><p>创建 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler</span></code> <strong>调度平台</strong> 的 <a class="reference internal" href="../scheduler-tasksetting/tasksetting.html"><span class="doc">任务计划</span></a></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注意 <code class="docutils literal notranslate"><span class="pre">IJOB实现类</span></code> ：</p>
+<p>绑定的 <strong>数据源设置</strong> 都为单表，则 <code class="docutils literal notranslate"><span class="pre">IJOB实现类</span></code> 设置为 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler.ETLSingleTableJob</span></code> ；
+绑定的 <strong>数据源设置</strong> 都为多表，则 <code class="docutils literal notranslate"><span class="pre">IJOB实现类</span></code> 设置为 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler.ETLMultiTableJob</span></code> 。</p>
+</div>
+<ul class="simple">
+<li><p>设置 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLService</span></code> <strong>API服务</strong> 的方法、配置执行SQL语句</p></li>
+<li><p>启动 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler</span></code> <strong>调度服务</strong> 的任务，并 <a class="reference internal" href="../scheduler-tasksetting/tasklog.html"><span class="doc">查看调度日志</span></a></p></li>
+</ul>
+<blockquote>
+<div><p><strong>工具逻辑如下：</strong></p>
+</div></blockquote>
+<img alt="../_images/ETL-Process.png" src="../_images/ETL-Process.png" />
 </div>
 
 

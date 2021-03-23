@@ -1,0 +1,329 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>启动前准备（调度平台） &mdash; AutoDataProcessDocs 1.0.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="启动前准备（API平台）" href="apisetting.html" />
+    <link rel="prev" title="使用设置说明" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> AutoDataProcessDocs
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">调度平台</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../scheduler-start/index.html">启动项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scheduler-tasksetting/index.html">任务搭建及插件开发</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scheduler-Instructions/index.html">搭建一个任务示例</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../scheduler-deploy/index.html">安装部署</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API平台</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../api-start/index.html">启动项目</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api-setting/index.html">接口搭建</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api-Instructions/index.html">使用说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api-deploy/index.html">安装部署</a></li>
+</ul>
+<p class="caption"><span class="caption-text">ETL工具</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../etl-introduction/index.html">简介</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../etl-deploy/index.html">安装</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">使用说明</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">启动前准备（调度平台）</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">数据中心设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">数据源设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">数据格式设置</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">任务设置设置</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="apisetting.html">启动前准备（API平台）</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">AutoDataProcessDocs</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">使用设置说明</a> &raquo;</li>
+        
+      <li>启动前准备（调度平台）</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="../_sources/etl-setting/schedulersetting.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>启动前准备（调度平台）<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>数据中心设置<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>维护对应的 <a class="reference internal" href="../scheduler-tasksetting/dbsetting.html"><span class="doc">数据中心</span></a> ，维护的数据中心作为源数据库，调度中心从此处抽取数据。</p>
+</div>
+<div class="section" id="id3">
+<h2>数据源设置<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="../scheduler-tasksetting/datasourcesetting.html"><span class="doc">数据源设置</span></a> ，定义SQL，如下图定义取用户数据和回填用户成功或者失败状态的SQL：</p>
+<img alt="../_images/etl-dssetting.png" src="../_images/etl-dssetting.png" />
+<img alt="../_images/aftersqlsetting.png" src="../_images/aftersqlsetting.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>对于一些常量，可以使用 <a class="reference internal" href="../scheduler-tasksetting/systemvariables.html"><span class="doc">关键字</span></a> 的形式来替换数据源的SQL语句，如上图主数据源的 <strong>[OWNERID]</strong></p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">主数据源</span></code>：选择 <strong>单表数据源</strong> 和 <strong>多表数据源</strong> 时必填，主要用来查询要传输的数据，每次传输数据量使用SQL的条件即可（如：Oracle的rownum、SqlServer的Top、MySql的limit）</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">明细数据源</span></code>：如传输的数据按照 <strong>主子表</strong> 的形式传输，该SQL配置的就是查询子表数据的SQL语句，用大括号 <cite>{}+$</cite> 符号来配置 <code class="docutils literal notranslate"><span class="pre">{$主数据源的列（sql查出来的caption）$}</span></code> 可以自动替换成主数据源中查出来对应字段的数据</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">成功后执行的SQL</span></code>：该SQL会在数据传输成功后执行</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">失败后执行的SQL</span></code>：该SQL会在数据传输失败后执行</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>内置变量：
+<code class="docutils literal notranslate"><span class="pre">&#64;TRANDATE</span></code> ：传输日期
+<code class="docutils literal notranslate"><span class="pre">&#64;ERROR_MESSAGE</span></code> ：失败的错误信息</p>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">连接字符串</span></code>：apiurl= <code class="docutils literal notranslate"><span class="pre">/api/datatransfer</span></code> ?method= <code class="docutils literal notranslate"><span class="pre">batchuser</span></code> ;primarykey= <code class="docutils literal notranslate"><span class="pre">userid</span></code> ;ownerId= <code class="docutils literal notranslate"><span class="pre">888</span></code> 的作用是指定路由</dt><dd><ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">/api/datatransfer</span></code> 指得是 <code class="docutils literal notranslate"><span class="pre">API中心</span></code> 的路由配置，如下图：</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">batchuser</span></code> 指得是 <code class="docutils literal notranslate"><span class="pre">etlapi.json</span></code> 内对应的 <code class="docutils literal notranslate"><span class="pre">apiTag</span></code> ，数据到了 <code class="docutils literal notranslate"><span class="pre">API中心</span></code> 后根据 <code class="docutils literal notranslate"><span class="pre">etlapi.json</span></code> 配置文件对应的 <code class="docutils literal notranslate"><span class="pre">apiTag</span></code> ，执行对应apiTag内配置的语句，如下图：</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">userid</span></code> primarykey的作用是根据数据在 <code class="docutils literal notranslate"><span class="pre">API中心</span></code> 处理的结果，来替换成功和失败语句内配置的数据主键，配置的primarykey必须在成功和失败的SQL语句中配置变量才可以成功的被替换，如上图的 <code class="docutils literal notranslate"><span class="pre">{$userid$}</span></code> 因为连接字符串中配置的primarykey也是userid，所以可以成功被替换</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">888</span></code> ownerId的作用是根据 <strong>所有者</strong> 的编号来过滤数据，例如：如果主数据源查询出来的ownerId为888，到了 <code class="docutils literal notranslate"><span class="pre">API中心</span></code> 去匹配 <code class="docutils literal notranslate"><span class="pre">etlapi.json</span></code> 配置的 <code class="docutils literal notranslate"><span class="pre">ownerId</span></code> ，一旦匹配不上就不会去寻找 <code class="docutils literal notranslate"><span class="pre">apiTag</span></code> 执行其语句，而是直接返回错误。当然我们可以直接设置 <code class="docutils literal notranslate"><span class="pre">&quot;ownerId&quot;:</span> <span class="pre">&quot;all&quot;</span></code> 来允许所有的所有者进入</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>需要注意的是：
+<code class="docutils literal notranslate"><span class="pre">ownreId</span></code> 至关重要，他是寻找对应API的指南针，只要调度的 <code class="docutils literal notranslate"><span class="pre">ownerId</span></code> 和 <code class="docutils literal notranslate"><span class="pre">etlapi.json</span></code> 的 <code class="docutils literal notranslate"><span class="pre">ownerId</span></code> 一致，才可以找到对应的语句和方法</p>
+<p>如果 <a class="reference internal" href="../scheduler-tasksetting/datasourcesetting.html"><span class="doc">数据源设置的单据类型选择了单表或者多表类型</span></a> ，则根据主数据源中查出来的 <code class="docutils literal notranslate"><span class="pre">ownerId</span></code> 去匹配 <code class="docutils literal notranslate"><span class="pre">etlapi.json</span></code> 的 <code class="docutils literal notranslate"><span class="pre">ownerId</span></code> ，那么，连接字符串中配置的 <code class="docutils literal notranslate"><span class="pre">ownerId</span></code> 无效；如果 <a class="reference internal" href="../scheduler-tasksetting/datasourcesetting.html"><span class="doc">数据源设置的单据类型选择了空数据源类型</span></a> ，连接字符串的 <code class="docutils literal notranslate"><span class="pre">ownerId</span></code> 是有效的（因为 <strong>空数据源</strong> 不配置SQL语句，我们还可以在 <strong>连接字符串</strong> 配置 <code class="docutils literal notranslate"><span class="pre">ownerId</span></code> ，如下图，值得注意的是，该配置只对 <strong>空数据源</strong> 有效）</p>
+</div>
+<img alt="../_images/apirouting.png" src="../_images/apirouting.png" />
+<img alt="../_images/apiconfig.png" src="../_images/apiconfig.png" />
+<img alt="../_images/apimethod.png" src="../_images/apimethod.png" />
+</div>
+<div class="section" id="id4">
+<h2>数据格式设置<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>打开 <a class="reference internal" href="../scheduler-tasksetting/jsonsetting.html"><span class="doc">数据源JSON格式</span></a>，选择要配置的数据源，点击一键生成，需要注意的是，我们要选择正确的 <a class="reference internal" href="../scheduler-tasksetting/dbsetting.html"><span class="doc">数据中心</span></a> ，一定要勾选上 <strong>是否生成ownerId</strong> ，然后覆盖即可，具体设置的各个信息项，详细可以查看 <a class="reference internal" href="../scheduler-tasksetting/jsonsetting.html"><span class="doc">数据源JSON格式</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>如果最终生成的只有OwnerId，可能是已下两种情况导致的：</p>
+<ul class="simple">
+<li><p>选择的数据中心配置有问题</p></li>
+<li><p>如果确认数据库地址没问题，拿着主数据源或者明细数据源去对应的数据库执行一下，看看语句能不能成功执行，查出列</p></li>
+</ul>
+</div>
+<img alt="../_images/convertjson.png" src="../_images/convertjson.png" />
+<img alt="../_images/convertjsonafter.png" src="../_images/convertjsonafter.png" />
+</div>
+<div class="section" id="id5">
+<h2>任务设置设置<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p>ETL的任务计划设置和通用调度平台的 <a class="reference internal" href="../scheduler-tasksetting/tasksetting.html"><span class="doc">任务计划设置</span></a> 差不多，不一样的只是插件和配置文件的配置（当然ETL无需写插件，只需要利用现有的插件即可实现）</p>
+<p><strong>插件的配置：</strong></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">程序集</span></code> 我们一律设置为 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler.dll</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">配置文件</span></code> 我们一律设置为 <code class="docutils literal notranslate"><span class="pre">etlsetting.json</span></code></p></li>
+<li><dl>
+<dt><code class="docutils literal notranslate"><span class="pre">IJOB实现类</span></code> ：</dt><dd><ul class="simple">
+<li><p>对于任务设置绑定的数据源都是 <strong>单表数据源</strong> 或者 <strong>空数据源</strong> 的情况下，我们需要设置 <code class="docutils literal notranslate"><span class="pre">IJOB实现类</span></code> 为 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler.ETLSingleTableJob</span></code></p></li>
+</ul>
+<img alt="../_images/etlplugs.png" src="../_images/etlplugs.png" />
+<ul class="simple">
+<li><p>对于任务设置绑定的数据源都是 <strong>多表数据源</strong> 的情况下，我们需要设置 <code class="docutils literal notranslate"><span class="pre">IJOB实现类</span></code> 为 <code class="docutils literal notranslate"><span class="pre">RomensCloudETLScheduler.ETLMultiTableJob</span></code></p></li>
+</ul>
+<img alt="../_images/etlplugs-1.png" src="../_images/etlplugs-1.png" />
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>配置文件设置：</strong></p>
+<p>打开任务计划设置的修改界面，点击修改配置文件</p>
+<img alt="../_images/configfile1.png" src="../_images/configfile1.png" />
+<img alt="../_images/configfile2.png" src="../_images/configfile2.png" />
+<img alt="../_images/configfile3.png" src="../_images/configfile3.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>注意对设置的JSON需要检测一下格式是否正确，可以去  <a class="reference external" href="http://www.bejson.com/">验证JSON</a></p>
+</div>
+<img alt="../_images/configfile4.png" src="../_images/configfile4.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="apisetting.html" class="btn btn-neutral float-right" title="启动前准备（API平台）" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="使用设置说明" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, ysj.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

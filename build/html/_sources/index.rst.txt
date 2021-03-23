@@ -32,7 +32,7 @@
    :maxdepth: 2
    :caption: ETL工具
 
-   简介 <etl-start/index.rst>
-   安装 <etl-start/index.rst>
-   使用说明 <etl-start/index.rst>
+   简介 <etl-introduction/index.rst>
+   安装 <etl-deploy/index.rst>
+   使用说明 <etl-setting/index.rst>
 
